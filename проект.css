@@ -1,0 +1,294 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.wrapperAboba{
+    max-width: 2000px;
+    width: 100%;
+    margin: 0 auto;
+    background-image: url("./img/162d7471b179adc3389989e142e44ad2.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+}
+header{
+    position: sticky;
+    top: 0;
+}
+.top{
+    height: 50px;
+    display: flex;
+    background-color:rgba(0,0,0,0.2);
+    justify-content: space-between;
+}
+.imgJordan{
+    width: 50px;
+}
+.imgJames{
+    width: 50px;
+}
+.label{
+    width: 50px;
+    height: 50px;
+}
+.nameJordan{
+    margin-left: -150px;
+}
+.nameJames{
+    margin-right: -130px;
+}
+.center{
+    display: flex;
+    width: 100%;
+    margin: 100px 0 0 0;
+    justify-content: space-around;
+    gap: 180px;
+}
+.slideJordan{
+    width: 400px;
+    height: 700px;
+    background-color: bisque;
+    border-radius: 2em;
+    background-image:url('./img/5c0d2bf20131f44e0e539a3caf3691a7.jpg') ;
+    transition: 1s;
+    background-size: cover;
+}
+.jordanWrapper:hover  {
+    .slideJordan{
+    transform: rotateY(360deg);
+    background-image:url('./img/3feaec5d06f5d10305943cc1cb835cbb.jpg') ;
+    background-size: 100% 100%;
+    }
+    
+}
+
+.slideJames{
+    width: 400px;
+    height: 700px;
+    background-color: bisque;
+    border-radius: 2em;
+    background-image: url(./img/453698e11e445d75d08e1f4fb805c76b.jpg);
+    transition: 1s;
+    background-size: cover;
+}
+.jamesWrapper:hover {
+    .slideJames{
+    background-size: 100% 100%;
+    transform: rotateY(360deg);
+    background-image:url('./img/56b56eff981e6bdbb90fdd385641670b.jpg') ;
+    }
+}
+
+.battom{
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.accordion {
+    background-color: rgba(0,0,0,0.5);
+    color:rgba(229, 204, 62, 0.752);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4 s;
+  }
+  
+.active, .accordion:hover {
+    background-color: #ccc,0.5;
+}
+  
+.panel {
+    display:none;
+    overflow: hidden;
+    justify-content: space-between;
+    list-style:none;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+}
+.panel .shoes1 {
+    position: relative;
+    width: 49%;
+    display: inline-block;
+    background-color: #fff;
+    margin: 0;
+    box-shadow: 1px 3px 1px 0 rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+.panel .shoes1 h3{
+    color: #fff;
+    margin: 5px;
+}
+.panel .shoes1 p{
+    color: #fff;
+    margin: 5px;
+}
+.panel .shoes1 > div.effect-to-right {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.panel .shoes1:hover > div.effect-to-right{
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.panel .shoes1 div.effect-to-right{
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: all 0.5s ease-in-out;
+    color: #fff;
+    transform: translate(-250px, 0px) rotate(0deg);
+}
+.panel .shoes1:hover div.effect-to-right{
+    opacity: 1;
+    transform: translate(0px, 0px) rotate(0deg);
+}
+
+
+
+
+.panel .shoes2 {
+    position: relative;
+    width: 49%;
+    display: inline-block;
+    background-color: #fff;
+    margin: 0;
+    box-shadow: 1px 3px 1px 0 rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+.panel .shoes2 h3{
+    color: #fff;
+    margin: 5px;
+}
+.panel .shoes2 p{
+    color: #fff;
+    margin: 5px;
+}
+.panel .shoes2 > div.effect-to-right {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.panel .shoes2:hover > div.effect-to-right{
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.panel .shoes2 div.effect-to-right{
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: all 0.5s ease-in-out;
+    color: #fff;
+    transform: translate(250px, 0px) rotate(0deg);
+}
+.panel .shoes2:hover div.effect-to-right{
+    opacity: 1;
+    transform: translate(0px, 0px) rotate(0deg);
+}
+
+
+
+
+.blokPanel{
+    margin-top: 100px;
+}
+h2{
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+.sneakers{
+   height: 100%;
+    width: 100%;
+    background-size: 100%;
+}
+
+details > summary::marker {
+    display: none;
+    content: '';
+}
+
+.nike{
+    position: absolute;
+    width: 500px;
+    height: 375px;
+    background-image: url("./img/MTgwMTMyNzUwMjY5NDkwMjk4.jpg");
+    border-radius: 2em;
+    background-size: 100% 100%;
+    margin-left: -225px;
+}
+.shoes1{
+    max-width: 788px;
+    width: 100%;
+    max-height: 500px;
+    min-width: 500px;
+}
+.shoes2{
+    max-width: 788px;
+    width: 100%;
+    margin-left: 51px;
+    max-height: 500px;
+    margin-right: 0;
+}
+.textJordan{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+[data-tooltip]::after {
+    position: absolute;
+    content: attr(data-tooltip);
+    opacity: 0;
+    transition: 1s;
+    pointer-events: none;
+    top: -10px;
+    left: 48%;
+  }
+  [data-tooltip]:hover::after {
+    opacity: 1;
+    left: 47.5%;
+    top: -2em;
+  }
+  [data-tooltip] {
+    position: relative;
+}
+.end{
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.768);
+    height: 100px;
+    padding-top: 10px;
+}
+.textFooter{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size:x-large;
+    margin-bottom: 5px;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.imgPng{
+    transition: 1s;
+}
+.imgPng:hover{
+    transform: scale(1.5);
+}
+.video{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
